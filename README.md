@@ -21,5 +21,10 @@ dotnet run -c Debug/Release
 Or you can start any static file server from the AppBundle directory
 
 ```
-dotnet serve -d:bin/$(Configuration)/net7.0/browser-wasm/AppBundle
+dotnet serve -h "Cross-Origin-Opener-Policy:same-origin" -h "Cross-Origin-Embedder-Policy:require-corp" -d:bin/Debug/net7.0/browser-wasm/AppBundle
+dotnet serve -h "Cross-Origin-Opener-Policy:same-origin" -h "Cross-Origin-Embedder-Policy:require-corp" -d:bin/Release/net7.0/browser-wasm/AppBundle
 ```
+
+https://github.com/lambdageek/hithread
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer#security_requirements
