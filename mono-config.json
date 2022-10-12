@@ -1,0 +1,51 @@
+{
+  "mainAssemblyName": "wasmbrowser.dll",
+  "assemblyRootFolder": "managed",
+  "debugLevel": 0,
+  "assets": [
+    {
+      "behavior": "assembly",
+      "name": "System.Console.dll"
+    },
+    {
+      "behavior": "assembly",
+      "name": "System.Private.CoreLib.dll"
+    },
+    {
+      "behavior": "assembly",
+      "name": "System.Private.Uri.dll"
+    },
+    {
+      "behavior": "assembly",
+      "name": "System.Runtime.InteropServices.JavaScript.dll"
+    },
+    {
+      "behavior": "assembly",
+      "name": "System.Threading.Channels.dll"
+    },
+    {
+      "behavior": "assembly",
+      "name": "wasmbrowser.dll"
+    },
+    {
+      "virtualPath": "runtimeconfig.bin",
+      "behavior": "vfs",
+      "name": "supportFiles/0_runtimeconfig.bin"
+    },
+    {
+      "virtualPath": "/usr/share/zoneinfo/",
+      "behavior": "vfs",
+      "name": "dotnet.timezones.blat"
+    },
+    {
+      "behavior": "dotnetwasm",
+      "name": "dotnet.wasm"
+    },
+    {
+      "behavior": "js-module-threads",
+      "name": "dotnet.worker.js"
+    }
+  ],
+  "remoteSources": [],
+  "pthreadPoolSize": -1
+}
