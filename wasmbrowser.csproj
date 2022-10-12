@@ -6,9 +6,10 @@
     <WasmMainJSPath>main.js</WasmMainJSPath>
     <OutputType>Exe</OutputType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <WasmEnableThreads>true</WasmEnableThreads>
+    <MSBuildEnableWorkloadResolver>true</MSBuildEnableWorkloadResolver>
     <WasmBuildNative>true</WasmBuildNative>
     <EmccFlags>-sVERBOSE -sERROR_ON_UNDEFINED_SYMBOLS=0</EmccFlags>
+    <WasmEnableThreads>true</WasmEnableThreads>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
